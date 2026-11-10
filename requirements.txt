@@ -1,0 +1,6 @@
+gymnasium>=1.0
+numpy>=1.26
+matplotlib>=3.8
+stable-baselines3>=2.3
+sb3-contrib>=2.3
+pytest>=8

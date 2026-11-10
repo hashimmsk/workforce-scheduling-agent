@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wsa"
+version = "0.1.0"
+description = "Workforce Scheduling Agent: custom Gymnasium environment + DQN/PPO (BTE 422, University of Miami)"
+requires-python = ">=3.10"
+dependencies = [
+  "gymnasium>=1.0",
+  "numpy>=1.26",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+rl = ["stable-baselines3>=2.3", "sb3-contrib>=2.3"]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["wsa"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
